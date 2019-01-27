@@ -9,7 +9,7 @@ Modern web applications perform a variety of functions and provide amazing featu
    * [Python3]
    * [Vagrant]
    * [VirtualBox]
-#### To Setup Project : ####
+### To Setup Project : ###
  1.Download [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1).
 
  2.If you don't have latest version of python,download and install it.
