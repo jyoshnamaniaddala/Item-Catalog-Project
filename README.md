@@ -16,11 +16,11 @@ Modern web applications perform a variety of functions and provide amazing featu
 
  4.Vagrant and our project should be present in the same folder
 
- 5.To bring virtual machine online `vagrant up`.To login `vagrant ssh`.
+ 5.To bring virtual machine online `vagrant up`.
  
  6.To login `vagrant ssh`.
  
- 7.After login,'cd vagrant'
+ 7.After login, move to vagrant folder `cd vagrant`
  
  8.Now,You need to install some softwares to execute the project which are,
       
@@ -48,9 +48,9 @@ Modern web applications perform a variety of functions and provide amazing featu
   	 
 	 `pip install requests --user`
  
- 9.After Succesfully installed all of them,change to your project directory
+ 9.After Succesfully installation of all of them,run python files.
  
- 10.Run `database_setuo.py` to initialise the database.
+ 10.Run `database_setup.py` to initialise the database.
  
  11.Run `menuitems.py` to send sample data to database.
  
