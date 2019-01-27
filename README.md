@@ -25,22 +25,27 @@ Modern web applications perform a variety of functions and provide amazing featu
  8.Now,You need to install some softwares to execute the project which are,
       
    install pip
-         `sudo apt-get install python-pip`
+         
+	 `sudo apt-get install python-pip`
         
    install flask
-         `pip install flask --user`
+         
+	 `pip install flask --user`
        
    install sqlalchemy
-	       `pip install sqlalchemy --user`
+	      
+	 `pip install sqlalchemy --user`
   	   
    install oauth
-         `pip install oauth --user`
+         
+	 `pip install oauth --user`
   	   
    install oauth2client  
          `pip install oauth2client --user`
        
    install requests
-  	     `pip install requests --user`
+  	 
+	 `pip install requests --user`
  
  9.After Succesfully installed all of them,change to your project directory
  
@@ -54,7 +59,7 @@ Modern web applications perform a variety of functions and provide amazing featu
  
  14.Now you can access web application.
  
-### JSON endpoint ###
+## JSON endpoint ##
     
     `'/state/<int:state_id>/JSON'`
     
