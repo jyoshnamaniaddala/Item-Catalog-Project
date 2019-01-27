@@ -1,0 +1,34 @@
+<html>
+<body>
+<div class="clr"> 
+{% include 'index.html' %}
+<h1 align="center">Famous Recepies of {{state.name}}</h1>
+<div class="algn">
+<a href="{{ url_for('stateMenuopen') }}">Go back</a>
+</div>
+{% with messages = get_flashed_messages()  %}
+{% if messages %}
+<ul>
+{% for message in messages  %}
+<li><strong>{{message}}</strong></li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+<a href='{{url_for('newMenuItem',state_id=state.id)}}'>create new item</a>
+</br>
+{% for i in items %}
+<center>
+<div class="blocks">
+<h3>{{i.name}}</h3>
+<a href='{{url_for('editMenuItem',state_id=state.id,menu_id=i.id)}}'>Edit</a>
+</br>
+<a href='{{url_for('deleteMenuItem',state_id=state.id,menu_id=i.id)}}'>Delete</a>
+</br>
+</div>
+</center>
+</br>
+{% endfor %}
+</div>
+</body>
+</html>

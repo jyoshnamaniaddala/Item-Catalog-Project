@@ -1,0 +1,17 @@
+<html>
+<div class="clr">
+{% include "index.html" %}
+<body>
+<h1> Are you sure you want to delete {{item.name}}? </h1>
+
+<form action="{{ url_for('deleteMenuItem', state_id=item.state_id, menu_id=item.id)}}" method = 'post'>
+
+<input type='submit', value = 'Delete'>
+
+</form>
+
+<a href = "{{ url_for('stateDishes', state_id = item.state_id)}}"> Cancel </a>
+</div>
+</body>
+
+</html>

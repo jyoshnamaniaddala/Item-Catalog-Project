@@ -1,0 +1,15 @@
+<html>
+<body>
+<div class="clr">
+{% include "index.html" %}
+<form action= "{{url_for('editState', state_id = state_id)}}" method = 'POST'>
+
+<p>Name:</p>
+<input type = 'text' size='30' name = 'name' placeholder = '{{item.name}}'>
+
+<input type='submit' value='Edit'>
+</form>
+<a href= '{{url_for('stateMenuopen')}}'>Cancel</a>
+</div>
+</body>
+</html>

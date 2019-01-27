@@ -1,0 +1,35 @@
+<html>
+<body>
+<div class="clr">
+{% include "index.html" %}
+<div class="algn">
+<a href="{{ url_for('gdisconnect') }}">Logout</a>
+</div>
+{% with messages = get_flashed_messages()  %}
+{% if messages %}
+<ul>
+{% for message in messages  %}
+<li><strong>{{message}}</strong></li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+<center>
+<a href="{{ url_for('newState') }}">click here to add new state</a>
+</center>
+{% for i in states %}
+<center>
+<div class="blocks">
+<h3><a href ="{{ url_for('stateDishes',state_id=i.id) }}">{{ i.name }}</a></h3>
+<a href ="{{url_for('editState',state_id=i.id) }}">edit</a>
+</br>
+<a href ="{{url_for('deleteState',state_id=i.id) }}">delete</a>
+</br>
+</div>
+</center>
+</br>
+{% endfor %}
+</div>
+</body>
+</html>
