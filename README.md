@@ -3,7 +3,7 @@
 This is Item Catlog project which is devoloped using flask frame work,and CRUD operations are performed on the database,in this project authentication is provided using Google API's.Authenticated users can only edit,delete and update their own items.
 ## Why This Project? ##
 Modern web applications perform a variety of functions and provide amazing features and utilities to their users; but deep down, it’s really all just creating, reading, updating and deleting data. In this project, you’ll combine your knowledge of building dynamic websites with persistent data storage to create a web application that provides a compelling service to your users.
-## TO RUN PROJECT ##
+## To Run Project ##
 ### PreRequisites: ###
 
    * [Python3]
