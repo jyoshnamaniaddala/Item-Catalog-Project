@@ -169,13 +169,19 @@ def stateMenu():
     return render_template("mainpage.html", states=states)
 
 
-# Showing state name and it's menu items in json file
+# Showing state menu items in json file
 @app.route('/state/<int:state_id>/JSON')
 def stateJSON(state_id):
     state = session.query(States).filter_by(id=state_id).all()
     menuitem = session.query(MenuItem).filter_by(state_id=state_id).all()
-    return jsonify(State=[i.serialize for i in state],
-                   Items=[i.serialize for i in menuitem])
+    return jsonify(Items=[i.serialize for i in menuitem])
+
+
+# Showing particular menu item in state
+@app.route('/state/<int:state_id>/menu/<int:menu_id>/JSON')
+def menuItemJSON(state_id, menu_id):
+    menuitem = session.query(MenuItem).filter_by(id=menu_id).one()
+    return jsonify(MenuItem=menuitem.serialize)
 
 
 # To show states names after login
