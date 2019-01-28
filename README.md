@@ -62,7 +62,7 @@ Modern web applications perform a variety of functions and provide amazing featu
  
  14.Now you can access web application.
  
-## JSON endpoint ##
+## JSON endpoints ##
     
     `'/state/<int:state_id>/JSON'`
     
@@ -70,3 +70,11 @@ Modern web applications perform a variety of functions and provide amazing featu
     
  ![screenshot 183](https://user-images.githubusercontent.com/45555841/51852358-f6b3ab00-234b-11e9-8828-a7737290893e.png)
  
+
+    `/state/<int:state_id>/menu/<int:menu_id>/JSON`
+    
+   which is shown as,
+   
+  ![screenshot 182](https://user-images.githubusercontent.com/45555841/51852636-8194a580-234c-11e9-810a-eb351b3fea83.png)
+  
+  
